@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    .top-position {
+        font-size:small;
+    }
+    
+    ul {
+        list-style-type: none;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    li {
+        float:left;
+    }
+    
+    a {
+        display:inline-block;
+        padding:14px 16px;
+        text-align:center;
+        text-decoration:none;
+        color:grey;
+    }
+
+    a:hover {
+        text-decoration:underline;
+    }
+
+    /* #searchbar {
+        position:absolute;
+        bottom:10px;
+    } */
+
+    section {
+        position:absolute;
+        top:35%;
+        left:35%;
+    }
+
+    body {
+        font-family:Arial, Helvetica, sans-serif;
+    }
+
+    .bottom-position {
+        position:fixed;
+        bottom:0;
+        width:100%;
+    }
+
+</style>
+
+</head>
+
+<body>
+    <ul class="top-position">
+        <li><a href="https://about.google/?fg=1&utm_source=google-US&utm_medium=referral&utm_campaign=hp-header">About</a></li>
+        <li><a href="https://store.google.com/US?utm_source=hp_header&utm_medium=google_ooo&utm_campaign=GS100042&hl=en-US">Store</a></li>
+        <li style="float:right"><a href=https://www.google.com/imghp?hl=en&tab=wi&ogbl">Images</a></li>
+        <li style="float:right"><a href="https://mail.google.com/mail/?tab=wm&ogbl">Gmail</a></li>    
+    </ul>
+    
+    <section>
+        <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
+        <form>
+            <input style="left:5px" type="text">
+            <div>
+                <button type="submit">Google Search</button>
+                <button type="submit">I'm Feeling Lucky</button>
+            </div>
+        </form>
+    </section>
+
+    <!-- freeze footer-->
+    <ul class="bottom-position">
+        <li><a href="https://www.google.com/intl/en_us/ads/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1">Advertising</a></li>
+        <li><a href="https://policies.google.com/privacy?fg=1">Business</a></li>
+        <li><a href="https://google.com/search/howsearchworks/?fg=1">How Search works</a></li>
+        <li style="float:right"><a href="https://www.google.com/preferences?hl=en">Settings</a></li>
+        <li style="float:right"><a href="https://policies.google.com/terms?fg=1">Terms</a></li>
+        <li style="float:right"><a href="https://policies.google.com/privacy?fg=1">Privacy</a></li>
+    </ul>
+</body>
+
+</html>
