@@ -28,25 +28,30 @@
         text-decoration:underline;
     }
 
-    /* #searchbar {
-        position:absolute;
-        bottom:10px;
-    } */
-
-    section {
-        position:absolute;
-        top:35%;
-        left:35%;
-    }
-
     body {
         font-family:Arial, Helvetica, sans-serif;
+    }
+    section {
+        display:block;
+        text-align:center;
+        position:relative;
+        top:100px;
+    }
+    
+    form {
+        display:inline-block;
+        margin:auto;
+        text-align:center;
+        position:relative;
     }
 
     .bottom-position {
         position:fixed;
+        left:0;
         bottom:0;
         width:100%;
+        background-color:#f2f2f2;
+        font-size:14px;
     }
 
 </style>
@@ -63,16 +68,17 @@
     
     <section>
         <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
-        <form>
-            <input style="left:5px" type="text">
-            <div>
-                <button type="submit">Google Search</button>
-                <button type="submit">I'm Feeling Lucky</button>
-            </div>
-        </form>
+        <div class="form" style=text-align:center>
+            <form>
+                <input style="left:5px" type="text">
+                <div>
+                    <button style="border-radius:4px background-color:#f2f2f2" type="submit">Google Search</button>
+                    <button style="border-radius:4px background-color:#f2f2f2" type="submit">I'm Feeling Lucky</button>
+                </div>
+            </form>
+        </div>
     </section>
 
-    <!-- freeze footer-->
     <ul class="bottom-position">
         <li><a href="https://www.google.com/intl/en_us/ads/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1">Advertising</a></li>
         <li><a href="https://policies.google.com/privacy?fg=1">Business</a></li>
